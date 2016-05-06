@@ -2,23 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>кабинет пользователя</title>
 </head>
     <body>
-        <h1>order server working <i class="fa fa-cog fa-spin"></i></h1>
         <br>
-        <h2>Добавить пользователя</h2>
-            <form metod="post" id="formAddUserJs" action="javascript:void(null);" onsubmit="addUser()">
-                <input id="usernameAddJs" name="username" type="text" placeholder="логин"><br>
-                <input id="passwordAddJs" name="password" type="text" placeholder="пароль"><br>
-                <input id="emailAddJs" name="email" type="text" placeholder="почта"><br>
-                <input value="create" type="submit">
-            </form>
-            <h2>Удалить пользователя</h2>
-                <form method="post" id="formDelUserJs" action="javascript:void(null);" onsubmit="delUser()">
-                    <input id="emailDelJs" name="email" type="text" placeholder="почта"><br>
-                    <input value="del" type="submit">
-                </form>
 
             <h2>Добавить заказ</h2>
                 <form method="POST" id="formAddOrderJs" action="javascript:void(null);" onsubmit="addOrder()">
@@ -27,8 +14,9 @@
                     <input id="pcsAddJs" name="pcs" type="number" placeholder="количество"><br>
                     <input id="commentAddJs" name="comment" type="text" placeholder="коментарий к заказу"><br>
                     <input value="addOrder" type="submit">
-            </form>
-            <h2>Получить заказы пользователя</h2>
+                </form>
+
+            <h2>посмотреть все заказы</h2>
                 <form method="post" id="formGetAllUserOrdersJs" action="javascript:void(null);" onsubmit="allUserOrders()">
                     <input id="userOrdersJs" name="login" type="text" placeholder="пользователь"><br>
                     <input value="getOrdersByUser" type="submit" >

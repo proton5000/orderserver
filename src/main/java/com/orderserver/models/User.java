@@ -35,9 +35,6 @@ public class User implements Serializable {
     @Column(unique = true)
     private String email;
 
-    @ElementCollection(fetch = FetchType.EAGER)
-    private Set<UserRole> userRoles;
-
     public String getName() {
         return name;
     }
@@ -74,12 +71,4 @@ public class User implements Serializable {
         return this;
     }
 
-    public Set<UserRole> getUserRoles() {
-        return userRoles;
-    }
-
-    public User setUserRoles(Set<UserRole> userRoles) {
-        this.userRoles = userRoles;
-        return this;
-    }
 }
